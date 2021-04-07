@@ -13,8 +13,8 @@ public class PicoYPlaca {
     public boolean validarPlate(String inputPlate) {
         boolean vale = true;
         try {
-            Integer.parseInt(inputPlate); //Verifica número entero
-            if (inputPlate.length() != 4) { //Verifica longitud
+            int plate =Integer.parseInt(inputPlate); //Verifica número entero
+            if (inputPlate.length() != 4 || plate < 0) { //Verifica longitud
                 System.out.println("Placa no válida, inserte una placa válida");
                 vale = false;
             }

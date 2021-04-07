@@ -25,6 +25,7 @@ public class PlateValidationTest {
         objects.add(new Object[]{"3047"}); //Válida
         objects.add(new Object[]{"asdf"});
         objects.add(new Object[]{"plate"});
+        objects.add(new Object[]{"-123"});
         objects.add(new Object[]{"784r"});
         objects.add(new Object[]{"5s84"});
         objects.add(new Object[]{"7ss1"});
