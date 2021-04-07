@@ -2,14 +2,8 @@ package picoYPlaca;
 
 public class Ejecutable {
     public static void main (String[] args){
-        PicoYPlaca placa = new PicoYPlaca();
-        //placa.ingresarDate();
-        placa.ingresarTime();
-        /*if (placa.plate( placa.ingresarplate(),"martes")){
-            System.out.println("Se puede circular");
-        }else{
-            System.out.println("No se puede circular");
-        }*/
-
+        PicoYPlaca sistema = new PicoYPlaca();
+        String resultado = sistema.circula(sistema.ingresarplate(),sistema.ingresarDate(),sistema.ingresarTime()) ? "\n Puede circular" : "\n No puede circular";
+        System.out.println(resultado);
     }
 }
