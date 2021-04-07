@@ -39,7 +39,7 @@ public class PicoYPlaca {
         return new Scanner(System.in);
     }
 
-    //Ingreso por teclado una fecha con formato dd/MM/yyyy validada
+    //Ingreso por teclado una fecha con formato dd/MM/yyyy en String validada
     public Date ingresarDate() {
         System.out.println("Ingrese fecha en formato dd/MM/yyyy:");
         SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy"); //Formato de ingreso
@@ -93,7 +93,7 @@ public class PicoYPlaca {
     public boolean circula(String inputPlate, Date fecha, Date horaingresada) {
         DateFormat horaFormat = new SimpleDateFormat("HH:mm:ss"); //Formato de hora
 
-        System.out.println("Datos ingresados:\n" + "Placa: " + inputPlate +
+        System.out.println("\nDatos ingresados:\n" + "Placa: " + inputPlate +
                 "\nFecha: " + new SimpleDateFormat("EEEE dd MMMM yyyy").format(fecha) +
                 "\nHora: " + horaFormat.format(horaingresada));
         boolean circula = true;
