@@ -103,13 +103,13 @@ public class PicoYPlaca {
         calendar.setTime(fecha);
         int dia = calendar.get(Calendar.DAY_OF_WEEK);
 
-        //Fin de semana no aplica el plico y placa
+        //Fin de semana no aplica el pico y placa
         if (dia == 7 || dia == 1) {
             System.out.println("Libre circulación el fin de semana");
             return true;
         }
 
-        //Determinamos si la consulta está dentro de las horas que aplica el plico y placa
+        //Determinamos si la consulta está dentro de las horas que aplica el pico y placa
         try {
             Date inicialMorning = horaFormat.parse("07:00:00");
             Date finalMorning = horaFormat.parse("09:30:00");
